@@ -35,7 +35,7 @@ var documentText = esc_quot(documentText_totalstring[1]);
 
   console.log(data);
 
-  const myurl = "http://localhost:8081/docsubmission";
+  const myurl = "https://typeittogether-springboot.onrender.com/docsubmission";
 
   const Http = new XMLHttpRequest();
 
@@ -66,7 +66,7 @@ function getData() {
   //Get Request
 
   const myurl =
-    "http://localhost:8081/docsubmission";
+    "https://typeittogether-springboot.onrender.com/docsubmission";
   //console.log(myurl);
 
   const Http = new XMLHttpRequest();
