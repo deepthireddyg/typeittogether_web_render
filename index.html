@@ -1,0 +1,80 @@
+<!doctype html>
+<!-- See http://www.firepad.io/docs/ for detailed embedding docs. -->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+
+    <!-- CodeMirror -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/codemirror.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/codemirror.css" />
+
+    <!-- Firepad -->
+    <link rel="stylesheet" href="https://firepad.io/releases/v1.5.9/firepad.css" />
+    <script src="https://firepad.io/releases/v1.5.9/firepad.min.js"></script>
+
+    <script src="firepad.js"></script>
+
+    <!-- Include example userlist script / CSS. -->
+    <script src="firebase_userlist.js"></script>
+    <link rel="stylesheet" href="firepad_userlist.css" />
+
+    <!-- index page css-->
+   <link rel="stylesheet" href="index.css" />
+
+    <!-- index page Javascript-->
+    <script src="javascript.js"></script>
+
+
+</head>
+
+<body onload="init()">
+<div class="main_header">
+<img class="logo_image" src="logo.png" width="40" height="40">
+<h1>&nbsp;TypeItTogether Collaborator Module</h1>
+</div>
+<div class="main_container">
+
+<form id="submissionformid" >
+
+<div id="userlist"></div>
+<div id="firepad"></div>
+
+
+    <div id="documentProperties">
+        <h4>Document Properties</h4>
+            <br>
+            <input id="documentTitle" type="text" placeholder="Document Title *" />
+            <br>
+            <br>
+            <input id="createDate" type="date" />
+            <br>
+            <br>
+            <input id="lastModified" type="datetime-local" />
+            <br>
+            <br>
+
+            <input id="lastModifiedBy" type="text" placeholder="last modiified by* "  />
+            <br>
+            <br>
+            <input id="documentLocation" type="text" placeholder="documentLocation *" />
+            <br>
+            <br>
+            <input id="docPermission" type="text" placeholder="docPermission *" />
+            <br>
+            <br>
+            <input type="button" class="buttons" id="saveDocuments" value="Save to Database" onclick="postData()"/>
+            <br>
+            <br>
+           <input type="button" class="buttons" id="getDocuments" value="View Documents" onclick="getData()"/>
+
+    </div>
+</form>
+
+</div>
+
+</body>
+</html>
