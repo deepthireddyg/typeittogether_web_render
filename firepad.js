@@ -2,9 +2,9 @@
       //// Initialize Firebase.
       //// TODO: replace with your Firebase project configuration.
       var config = {
-        apiKey: 'AIzaSyCHqRsE2TIQS7rUQueL105OPWz5ypImp7E',
-        authDomain: "typeittogether.firebaseapp.com",
-        databaseURL: "https://typeittogether-default-rtdb.firebaseio.com"
+        apiKey: '.....',
+        authDomain: ".....",
+        databaseURL: "....."
       };
       firebase.initializeApp(config);
 
